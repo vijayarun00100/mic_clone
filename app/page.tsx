@@ -33,7 +33,7 @@ export default function Home() {
               <img src={Open.src} className="h-10 w-10 fixed right-2 lg:hidden" onClick={toggleNavbar} />
             </div>
             <div className="flex">
-              <ul className="flex lg:flex-row flex-col lg:space-x-10 lg:mt-0 mt-20">
+              <ul className={`flex lg:flex-row flex-col lg:space-x-10 lg:mt-0 mt-15 h-[107%] w-full lg:relative absolute left-0 items-center  lg:text-black text-slate-100 lg:bg-transparent cursor-pointer bg-black/70 lg:-translate-x-0 ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
                 <li className="">Home</li>
                 <li className="lg:mt-0 mt-20">About</li>
                 <li className="lg:mt-0 mt-20">Events</li>
@@ -44,7 +44,7 @@ export default function Home() {
         </div>
         {/* nav bar ends */}
         {/* headings - hero section */}
-        <div className="grid sm:grid-cols-3 sm:grid-rows-1 justify-items-center items-center mt-32 md:mt-20 lg:mt-0 sm:mt-0">
+        <div className="grid sm:grid-cols-3 sm:grid-rows-1 justify-items-center items-center mt-12 md:mt-20 lg:mt-0 sm:mt-0">
           <div className="sm:col-span-2 sm:row-span-2 ">
             <h1 className="text-5xl sm:text-7xl font-bold text-black drop-shadow-heading">Together We learn,</h1>
             <h1 className="mt-10 text-5xl sm:text-7xl font-bold drop-shadow-heading">Together We grow.</h1>
