@@ -1,0 +1,27 @@
+li {
+  position: relative;
+}
+
+li::after {
+  content: "";
+  position: absolute;
+  bottom: -2px; /* Adjust as needed */
+  left: 0;
+  width: 0;
+  height: 2px; /* Adjust as needed */
+  background-color: #000; /* Adjust as needed */
+  transition: width 0.3s ease-in-out;
+}
+
+li:hover::after {
+  width: 100%;
+}
+
+@keyframes underline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
