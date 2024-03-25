@@ -33,8 +33,8 @@ export default function Home() {
               <img src={Open.src} className="h-10 w-10 fixed right-2 lg:hidden" onClick={toggleNavbar} />
             </div>
             <div className="flex">
-              <ul className={`flex lg:flex-row flex-col lg:space-x-10 lg:mt-0 mt-15 h-[107%] w-full lg:relative absolute left-0 items-center  lg:text-black text-slate-100 lg:bg-transparent cursor-pointer bg-black/70 lg:-translate-x-0 ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
-                <li className="">Home</li>
+              <ul className={`flex lg:flex-row flex-col lg:space-x-10 lg:mt-0 mt-15 h-[107%] w-full lg:relative absolute left-0 items-center  lg:text-black text-slate-100 lg:bg-transparent cursor-pointer bg-black/80 z-10 lg:-translate-x-0 ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
+                <li className="lg:mt-0 mt-20">Home</li>
                 <li className="lg:mt-0 mt-20">About</li>
                 <li className="lg:mt-0 mt-20">Events</li>
                 <li className="lg:mt-0 mt-20 lg:text-black ">Contact</li>
