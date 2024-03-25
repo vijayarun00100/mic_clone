@@ -30,7 +30,7 @@ export default function Home() {
           <div className="flex lg:flex-row flex-col items-center justify-between w-[90%] mt-5">
             <div className="flex flex-row">
               <img src={LOGO.src} alt="" className="h-12 lg:w-80 w-64 xl:ml-56" />
-              <img src={Open.src} className="h-10 w-10 fixed right-2 lg:hidden" onClick={toggleNavbar} />
+              <img src={Open.src} className="h-10 w-10 lg:hidden" onClick={toggleNavbar} />
             </div>
             <div className="flex">
               <ul className={`flex lg:flex-row flex-col lg:space-x-10 lg:mt-0 mt-15 h-[107%] w-full lg:relative absolute left-0 items-center  lg:text-black text-slate-100 lg:bg-transparent cursor-pointer bg-black/80 z-10 lg:-translate-x-0 ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
