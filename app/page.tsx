@@ -50,7 +50,16 @@ export default function Home() {
             <button className="flex mb-10 ml-5 items-center justify-center w-40 h-12 rounded-3xl bg-blue-600 mt-7 text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-105">About us</button>
           </div>
           <div className="sm:col-span-1 sm:row-span-1 mb-20">
-            <img src={Windows.src} alt="" data-aos="slide-left" />
+            <img
+              src={Windows.src}
+              alt=""
+              className="aos-init"
+              data-aos="fade-in"
+              data-aos-offset="100"
+              data-aos-delay="50"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            />
           </div>
         </div>
         {/* hero section ends */}
