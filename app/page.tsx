@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import LOGO from "@/public/mic.png";
 import Open from "@/public/open.svg";
 import AOS from "aos";
+import Hamburger from 'hamburger-react';
 import Windows from "@/public/trial.png";
 import "./page.css";
 
@@ -10,7 +11,6 @@ import 'aos/dist/aos.css';
 
 export default function Home() {
   const [isopen, setIsOpen] = useState(false);
-
   const toggleNavbar = () => {
     setIsOpen(!isopen);
   };
@@ -29,7 +29,10 @@ export default function Home() {
         <div className="flex lg:flex-row flex-col justify-between lg:w-[90%] mt-5">
           <div className="flex justify-between  items-center">
             <img src={LOGO.src} alt="" className="h-12 lg:w-80 w-64 xl:ml-56" />
-            <img src={Open.src} className="h-10 w-10 lg:hidden" onClick={toggleNavbar} />
+            {/* <img src={Open.src} className="h-10 w-10 lg:hidden" onClick={toggleNavbar} /> */}
+            <div className="h-12 w-12 lg:hidden font-normal" >
+              <Hamburger onToggle={toggleNavbar} />
+            </div>
           </div>
           <div className="flex">
             <ul className={`flex lg:flex-row flex-col lg:space-x-10 lg:mt-0 mt-15 h-[107%] w-full lg:relative absolute left-0 items-center  lg:text-black text-slate-100 lg:bg-transparent cursor-pointer bg-black/80 z-10 lg:-translate-x-0 ${isopen ? 'translate-x-0' : '-translate-x-full'}`}>
