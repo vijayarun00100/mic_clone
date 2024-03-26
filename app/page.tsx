@@ -47,8 +47,8 @@ export default function Home() {
         {/* headings - hero section */}
         <div className="grid lg:grid-cols-3 grid-rows-1 justify-items-center items-center mt-12 md:mt-20 lg:mt-28 xl:mt-0 sm:mt-0">
           <div className="lg:col-span-2 row-span-2 ">
-            <h1 className="text-4xl ml-3 sm:ml-5 sm:text-7xl font-bold text-black drop-shadow-heading" data-aos="slide-right">Together We learn,</h1>
-            <h1 className="mt-10 text-4xl ml-3  sm:ml-5  sm:text-7xl font-bold drop-shadow-heading" data-aos="slide-right" data-aos-duration="1300">Together We grow.</h1>
+            <h1 className="text-5xl ml-3 sm:ml-5 sm:text-7xl font-bold text-black drop-shadow-heading" data-aos="slide-right">Together We learn,</h1>
+            <h1 className="mt-10 text-5xl ml-3  sm:ml-5  sm:text-7xl font-bold drop-shadow-heading" data-aos="slide-right" data-aos-duration="1300">Together We grow.</h1>
             <p className="mt-10 text-xl ml-3 sm:ml-5" data-aos="slide-right" data-aos-duration="1600">Engaging with the student community in innovative ways!</p>
             <button className="flex mb-10 ml-3  sm:ml-5 items-center justify-center w-40 h-12 rounded-3xl bg-blue-600 mt-7 text-white cursor-pointer transition duration-300 ease-in-out transform hover:scale-105">About us</button>
           </div>
